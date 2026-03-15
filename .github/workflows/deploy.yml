@@ -29,3 +29,6 @@ jobs:
           projectName: image-background-remover
           directory: out
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          # 传递环境变量
+          environmentVariables: |
+            REMOVE_BG_API_KEY=${{ secrets.REMOVE_BG_API_KEY }}
